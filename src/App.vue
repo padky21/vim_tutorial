@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PrimeiroComponente/>
+  O dado de app é {{testando}}
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import PrimeiroComponente from "@/components/PrimeiroComponente";
+  export default{
+    name: 'App',
+    components: {
+      PrimeiroComponente
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+    },
+    data() {
+      return{
+        testando: "teste"
+      }
+    }
   }
-}
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
