@@ -1,13 +1,24 @@
 <template>
-
+  <h1>Meu nome é: {{nome}}</h1>
 </template>
 
 <script>
 export default {
-  name: "LifeCycle.vue"
+  name: 'LifeCycle',
+  data(){
+    return{
+      nome: 'Ainda não sei'
+    }
+  },
+  created() {
+    setTimeout(() =>{
+      this.nome = 'Vasco'
+    },1000);
+  },
+  mounted(){
+    setTimeout(() =>{
+      this.nome = 'Teixeira'
+    },2000);
+  }
 }
 </script>
-
-<style scoped>
-
-</style>
