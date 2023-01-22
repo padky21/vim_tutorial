@@ -1,6 +1,6 @@
 <template>
   <h2>Esta descrição é da pessoa: {{nome}}</h2>
-  <Info/>
+  <Info :email="email" :esta_trabalhando="true"/>
   <Form/>
 </template>
 <script>
@@ -12,10 +12,11 @@
     components: {
       Form,
       Info
-    },
+    } ,
     data(){
       return{
-        nome: 'Vasco'
+        nome: 'Vasco',
+        email: 'vasco2@gmail.com'
       }
     }
   }

@@ -31,10 +31,8 @@ export default {
   },
   data() {
     return {
-      esta_trabalhando: true,
       mostrar_email: false,
       textoBotao: 'Mostrar e-mail',
-      email: 'vasco.teixeira@gmail.com',
       meu_link: 'https://google.com',
       backend_tech: ['JavaScript', 'PHP', 'Python'],
       frontend_tech: [
@@ -43,6 +41,10 @@ export default {
         {id: 3, language: 'VUE'}
       ]
     }
+  },
+  props: {
+    email: String,
+    esta_trabalhando: Boolean
   },
   methods: {
     showEmail() {
