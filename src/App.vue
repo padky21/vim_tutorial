@@ -4,6 +4,7 @@
   <p class="paragrafo-pai">O dado de app é {{ testando }}</p>
   <LifeCycle/>
   <Pessoa/>
+  <h1>Terminado!</h1>
 </template>
 
 <script>
